@@ -19,8 +19,9 @@ typeset -g _dynamic_backspace_stage=0
 zle_highlight=(region:bg=red,fg=white)
 
 function dynamic-backspace() {
-    # Reset stage if last widget wasn't this one (user did something else)
-    if [[ $LASTWIDGET != "dynamic-backspace" ]]; then
+    # Reset stage if last widget wasn't ours or an autosuggest wrapper
+    # (zsh-autosuggestions runs widgets like autosuggest-suggest after each keypress)
+    if [[ $LASTWIDGET != "dynamic-backspace" && $LASTWIDGET != autosuggest-* ]]; then
         _dynamic_backspace_stage=0
     fi
 
