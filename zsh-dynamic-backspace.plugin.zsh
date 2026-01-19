@@ -65,8 +65,12 @@ function dynamic-backspace() {
         *)
             # --- STAGE 1: NORMAL BACKSPACE ---
             # First press: just delete one char
+            # Only advance to stage 1 if we deleted a non-whitespace char
+            local prev_char="${LBUFFER: -1}"
             zle backward-delete-char
-            _dynamic_backspace_stage=1
+            if [[ -n "$prev_char" && ! "$prev_char" =~ [[:space:]] ]]; then
+                _dynamic_backspace_stage=1
+            fi
             ;;
     esac
 }
