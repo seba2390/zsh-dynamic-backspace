@@ -1,5 +1,3 @@
-# ~/.zshrc - User configuration for interactive zsh sessions
-
 # ============================================
 # Dynamic Backspace Widget (3-Stage)
 # 1st press: Deletes 1 char (Normal backspace)
