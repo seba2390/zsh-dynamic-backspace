@@ -1,1 +1,1 @@
-# zsh-dynamic-backspace
+Fun project trying to implement a zsh plugin
