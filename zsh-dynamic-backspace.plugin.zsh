@@ -13,7 +13,7 @@
 #   1 = highlight after 1st deletion (original 2-stage behavior)
 #   2 = highlight after 2nd deletion (original 3-stage behavior)
 #   3 = highlight after 3rd deletion, etc.
-typeset -g DYNAMIC_BACKSPACE_THRESHOLD=3
+typeset -g DYNAMIC_BACKSPACE_THRESHOLD=${DYNAMIC_BACKSPACE_THRESHOLD:-3}
 
 # Word boundary configuration: Characters to exclude from word
 # boundaries. Excludes / . and - by default (useful for paths/IPs)
