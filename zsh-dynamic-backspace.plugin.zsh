@@ -11,7 +11,7 @@
 #   1 = highlight after 1st deletion (original 2-stage behavior)
 #   2 = highlight after 2nd deletion (original 3-stage behavior)
 #   3 = highlight after 3rd deletion, etc.
-typeset -g DYNAMIC_BACKSPACE_THRESHOLD=2
+typeset -g DYNAMIC_BACKSPACE_THRESHOLD=3
 
 # State variable to track deletion count
 typeset -g _dynamic_backspace_count=0
