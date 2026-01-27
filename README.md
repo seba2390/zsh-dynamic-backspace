@@ -47,6 +47,23 @@ The plugin operates in distinct stages based on consecutive backspace presses:
    source ~/.zshrc
    ```
 
+### Manual Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/seba2390/zsh-dynamic-backspace ~/.zsh/zsh-dynamic-backspace
+   ```
+
+2. Add to your `~/.zshrc`:
+   ```bash
+   source ~/.zsh/zsh-dynamic-backspace/zsh-dynamic-backspace.plugin.zsh
+   ```
+
+3. Restart your terminal or reload:
+   ```bash
+   source ~/.zshrc
+   ```
+
 ## ⚙️ Configuration
 
 All configuration must be set **before** loading the plugin in your `~/.zshrc`.
@@ -157,5 +174,3 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 Created by Sebastian Yde Madsen
 
 ---
-
-**Enjoy smarter backspace deletion! 🚀**
