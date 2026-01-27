@@ -33,10 +33,10 @@ typeset -g DYNAMIC_BACKSPACE_WORDCHARS=${WORDCHARS//[\/\.\-]}
 #                                                   fg=white,bold"
 # Use 256-color codes with bg=#NNN or fg=#NNN (e.g., bg=#196 for
 #                                              bright red)
-typeset -g DYNAMIC_BACKSPACE_HIGHLIGHT_BG="blue"
-typeset -g DYNAMIC_BACKSPACE_HIGHLIGHT_FG="green"
+typeset -g DYNAMIC_BACKSPACE_HIGHLIGHT_BG=${DYNAMIC_BACKSPACE_HIGHLIGHT_BG:-"blue"}
+typeset -g DYNAMIC_BACKSPACE_HIGHLIGHT_FG=${DYNAMIC_BACKSPACE_HIGHLIGHT_FG:-"green"}
 # Optional: add styles like "bold" or "underline"
-typeset -g DYNAMIC_BACKSPACE_HIGHLIGHT_STYLE=""
+typeset -g DYNAMIC_BACKSPACE_HIGHLIGHT_STYLE=${DYNAMIC_BACKSPACE_HIGHLIGHT_STYLE:-""}
 
 # ==================================================================
 
